@@ -14,7 +14,12 @@
 # def ordenar(lista):
 
 # --------------------------------
+from audioop import reverse
 
+
+def ordenar(numeros):
+    numeros.sort(reverse=False)
+    return numeros
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
@@ -32,9 +37,9 @@ if __name__ == '__main__':
     # usando la funciones nativas de Python "sorted"
 
     # Luego de crear la función invocarla en este lugar:
-
+    lista_ordenada = ordenar(numeros)
     # lista_ordenada = ordenar(numeros)
-
+    print(lista_ordenada)
     # Imprimir en pantalla "lista_ordenada" que tendrá
     # los valores retornado por la función ordenar:
 
